@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Knot - Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="login-page">
+        <div class="card auth-card">
+            <a href="index.html" class="auth-logo">
+                <img src="assets/logo.png" alt="Knot Logo">
+            </a>
+            
+            <div class="auth-tabs">
+                <div class="auth-tab active" id="tabLogin">Sign In</div>
+                <div class="auth-tab" id="tabSignup">Create Account</div>
+            </div>
+
+            <div id="authErrorMessage" class="auth-error"></div>
+
+            <form class="auth-form" id="authForm">
+                <div id="signupFields">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" placeholder="e.g. Jane Doe">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" placeholder="you@example.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="••••••••" required minlength="6">
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-block" id="submitBtn">Sign In</button>
+            </form>
+            
+            <p class="auth-footer">
+                By continuing, you agree to Knot's Terms of Service and Privacy Policy.
+            </p>
+        </div>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/10.9.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.9.0/firebase-auth-compat.js"></script>
+    <script src="login.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

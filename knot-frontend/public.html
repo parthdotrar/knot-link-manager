@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Knot - Public Page</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="public-page">
+    
+    <main class="public-profile-container">
+        <header style="margin-bottom: 32px;">
+            <img src="https://api.dicebear.com/7.x/initials/svg?seed=CR" alt="Creator Avatar" class="public-avatar" id="profileImage">
+            <h1 class="public-name" id="profileName">Loading...</h1>
+            <p class="public-handle" id="profileHandle">@username</p>
+            <p class="public-bio" id="profileBio"></p>
+        </header>
+
+        <section class="public-links-list" id="linksContainer">
+            <!-- Links injected here by public.js -->
+        </section>
+    </main>
+
+    <script src="public.js"></script>
+</body>
+</html>

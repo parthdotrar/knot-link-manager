@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Knot - Your Links, One Page</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <!-- 1. HEADER & STEP PIPELINE -->
+    <header class="navbar">
+        <div class="navbar-container">
+            <div class="navbar-logo font-bold">
+                <img src="assets/logo.png" alt="Knot Logo">
+            </div>
+            
+            <!-- Step Pipeline -->
+            <div class="step-pipeline">
+                <span class="step"><span class="step-num">01</span> Claim Handle</span>
+                <span class="step-divider"></span>
+                <span class="step"><span class="step-num">02</span> Add Content</span>
+                <span class="step-divider"></span>
+                <span class="step"><span class="step-num">03</span> Share</span>
+            </div>
+
+            <a href="dashboard.html" class="btn btn-outline btn-sm">
+                Dashboard
+            </a>
+        </div>
+    </header>
+
+    <main class="landing-container">
+        
+        <!-- 2. HERO & COMMAND BAR -->
+        <section class="hero-section">
+            <h1 class="hero-title">
+                Consolidate your digital identity.
+            </h1>
+            <p class="hero-subtitle">
+                One high-performance link for your portfolio, socials, and projects.
+            </p>
+
+            <!-- Prompt / Claim Bar -->
+            <div class="command-bar">
+                <div class="command-input-group">
+                    <span class="command-prefix">knot.vercel.app/</span>
+                    <input 
+                        type="text" 
+                        placeholder="your-name" 
+                        class="command-input"
+                    />
+                </div>
+                <a href="login.html" class="btn btn-primary command-btn">
+                    Claim Handle &rarr;
+                </a>
+            </div>
+
+            <!-- Pills -->
+            <div class="pill-group">
+                <span class="pill">#portfolio</span>
+                <span class="pill">#newsletter</span>
+                <span class="pill">#socials</span>
+                <span class="pill">#store</span>
+            </div>
+        </section>
+
+        <!-- 3. HIGH DENSITY BENTO GRID -->
+        <section class="bento-section">
+            <h2 class="section-title">System Architecture</h2>
+            <div class="bento-grid">
+                
+                <!-- Card 1 -->
+                <div class="bento-card">
+                    <div class="bento-icon">⚡</div>
+                    <div class="bento-meta">Module 01</div>
+                    <h3 class="bento-title">Infinite Links</h3>
+                    <p class="bento-desc">
+                        Add unmetered routing to your latest videos, articles, and products. Clean URL structures with zero redirects.
+                    </p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bento-card">
+                    <div class="bento-icon">🔲</div>
+                    <div class="bento-meta">Module 02</div>
+                    <h3 class="bento-title">Tactile Layout</h3>
+                    <p class="bento-desc">
+                        Rigid CSS grid structures. No messy drag-and-drop. Your profile always aligns perfectly across every device viewport.
+                    </p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bento-card">
+                    <div class="bento-icon">🚀</div>
+                    <div class="bento-meta">Module 03</div>
+                    <h3 class="bento-title">Static Edge Speed</h3>
+                    <p class="bento-desc">
+                        Rendered on the edge. Zero client-side bloat. Your audience accesses your content in milliseconds.
+                    </p>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="bento-card">
+                    <div class="bento-icon">🌐</div>
+                    <div class="bento-meta">Module 04</div>
+                    <h3 class="bento-title">Global Access</h3>
+                    <p class="bento-desc">
+                        Open your links to the world. A stark, monochromatic, instantly recognizable presence.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+
+
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
